@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: Karla, sans-serif;
+  background: hsl(204, 43%, 93%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.component {
+  display: grid;
+  grid-template-areas: "up-part up-part" "left-part right-part";
+  max-width: 635px;
+  background: whitesmoke;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.12);
+  margin: 60px 0;
+}
+@media screen and (max-width: 572px) {
+  .component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+}
+.component > * {
+  padding: 40px;
+}
+.component .up-part {
+  grid-area: up-part;
+}
+.component .up-part h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 25px;
+}
+.component .up-part h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+}
+.component .up-part P {
+  color: hsl(218, 22%, 67%);
+  line-height: 25px;
+}
+.component .left-part {
+  grid-area: left-part;
+  background: hsl(179, 62%, 43%);
+  color: whitesmoke;
+  border-bottom-left-radius: 10px;
+}
+@media screen and (max-width: 572px) {
+  .component .left-part {
+    border-bottom-left-radius: 0;
+  }
+}
+.component .left-part .pricing {
+  margin: 20px 0 10px;
+  font-weight: 300;
+  color: rgba(245, 245, 245, 0.559);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.component .left-part .pricing .price {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.component .left-part p:nth-of-type(2) {
+  margin-bottom: 25px;
+}
+.component .left-part button {
+  width: 100%;
+  border: none;
+  background: hsl(71, 73%, 54%);
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: Karla, sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1490196078);
+          box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.component .left-part button:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.component .right-part {
+  grid-area: right-part;
+  background: rgb(74, 191, 188);
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 572px) {
+  .component .right-part {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.component .right-part h3 {
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+.component .right-part p {
+  line-height: 22px;
+  width: 80%;
+  font-size: 0.9rem;
+  color: rgba(245, 245, 245, 0.608);
+  font-weight: 300;
+}/*# sourceMappingURL=index.css.map */

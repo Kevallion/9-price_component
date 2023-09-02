@@ -1,0 +1,37 @@
+$Cyan: hsl(179, 62%, 43%);
+$Cyan2:rgb(74,191,188);
+$Bright: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$GrayiBlue: hsl(218, 22%, 67%);
+
+@font-face {
+    font-family: "Karla";
+    src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+
+$font1: Karla, sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-size: 16px;
+    font-family:$font1 ;
+    background: $lightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.attribution{
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
